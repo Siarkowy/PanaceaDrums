@@ -1,6 +1,6 @@
 ﻿--[[
 Name: LibRockDB-1.0
-Revision: $Rev: 62021 $
+Revision: $Rev: 240 $
 Developed by: ckknight (ckknight@gmail.com)
 Website: http://www.wowace.com/
 Description: Library to allow for fast, clean, and featureful saved variable access.
@@ -9,7 +9,7 @@ License: LGPL v2.1
 ]]
 
 local MAJOR_VERSION = "LibRockDB-1.0"
-local MINOR_VERSION = tonumber(("$Revision: 62021 $"):match("(%d+)")) - 60000
+local MINOR_VERSION = tonumber(("$Revision: 240 $"):match("(%d+)")) + 90000
 
 if not Rock then error(MAJOR_VERSION .. " requires LibRock-1.0") end
 

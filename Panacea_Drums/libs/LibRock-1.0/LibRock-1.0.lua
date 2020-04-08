@@ -1,6 +1,6 @@
 ﻿--[[
 Name: LibRock-1.0
-Revision: $Rev: 63317 $
+Revision: $Rev: 289 $
 Developed by: ckknight (ckknight@gmail.com)
 Website: http://www.wowace.com/
 Description: Library to allow for library and addon creation and easy table recycling functions.
@@ -8,7 +8,7 @@ License: LGPL v2.1
 ]]
 
 local MAJOR_VERSION = "LibRock-1.0"
-local MINOR_VERSION = tonumber(("$Revision: 63317 $"):match("(%d+)")) - 60000
+local MINOR_VERSION = tonumber(("$Revision: 289 $"):match("(%d+)")) + 90000
 
 local _G = _G
 local GetLocale = _G.GetLocale

@@ -6,7 +6,6 @@
 ## Author: Elkano
 ## X-Category: Library
 
-## LoadOnDemand: 1
 
 LibStub\LibStub.lua
 CallbackHandler-1.0\CallbackHandler-1.0.lua

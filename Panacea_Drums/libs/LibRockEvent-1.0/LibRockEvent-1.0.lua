@@ -1,6 +1,6 @@
 --[[
 Name: LibRockEvent-1.0
-Revision: $Rev: 61118 $
+Revision: $Rev: 230 $
 Developed by: ckknight (ckknight@gmail.com)
 Website: http://www.wowace.com/
 Description: Library to allow for event handling and inter-addon communication.
@@ -9,7 +9,7 @@ License: LGPL v2.1
 ]]
 
 local MAJOR_VERSION = "LibRockEvent-1.0"
-local MINOR_VERSION = tonumber(("$Revision: 61118 $"):match("(%d+)")) - 60000
+local MINOR_VERSION = tonumber(("$Revision: 230 $"):match("(%d+)")) + 90000
 
 if not Rock then error(MAJOR_VERSION .. " requires LibRock-1.0") end
 
