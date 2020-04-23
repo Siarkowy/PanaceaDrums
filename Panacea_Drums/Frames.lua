@@ -1,4 +1,5 @@
 local Panacea_Drums = Panacea_Drums
+local OmniCC = OmniCC
 
 Panacea_Drums:ProvideVersion("$Rev: 32 $", "$Date: 2008-07-29 09:00:27 +0200 (Di, 29 Jul 2008) $")
 
@@ -280,7 +281,7 @@ function Panacea_Drums:CreateSingleFrame(framename)
 					dur = 0
 					
 				else
-					self.centertext:SetText(floor(dur + 0.5))
+					self.centertext:SetText(OmniCC and "" or floor(dur + 0.5))
 					
 				end
 
