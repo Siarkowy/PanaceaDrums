@@ -153,7 +153,7 @@ function Panacea_Drums:CreateSingleFrame(framename)
 	object:SetShadowOffset(8/10, -8/10)
 	Drum.bottomtext = object
 
-	Drum.NbItemtext:SetText( GetItemCount(Panacea_Drums:GetDrumWatched(), nil, true))
+	Drum.NbItemtext:SetText(Panacea_Drums:GetItemCount(Panacea_Drums:GetDrumWatched(), nil, true))
 	
 	Drum.Lock = function(self)
 		self.anchor:Hide()

@@ -671,6 +671,21 @@ function Panacea_Drums:GetDrumWatched()
 	return self.db.profile.drumwatched
 end
 
+local equivDrums = {
+	[31810] = 29529,	-- Vote/Drums of Battle
+}
+Panacea_Drums.equivDrums = equivDrums
+
+function Panacea_Drums:GetItemCount(itemId, includeBank, includeCharges)
+	local count = GetItemCount(itemId, includeBank, includeCharges)
+	for customDrum, origDrum in pairs(equivDrums) do
+		if itemId == origDrum then
+			count = count + GetItemCount(customDrum, includeBank, includeCharges)
+		end
+	end
+	return count
+end
+
 function Panacea_Drums:RegisterLayout(data)
 	if not data.name then return end
 
