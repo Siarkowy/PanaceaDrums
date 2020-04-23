@@ -79,7 +79,8 @@ Panacea_Drums.options = {
 						Panacea_Drums.db.profile.drumwatched = v.item
 						
 						for kf,vf in pairs(Panacea_Drums.frames) do
-							vf.mainframe:SetAttribute("item", "item:"..v.item)
+							vf.mainframe:SetAttribute("type", "macro")
+							vf.mainframe:SetAttribute("macrotext", ("/use %s"):format(GetItemInfo(v.item)))
 							vf:SetIcon(v.texture)
 						end
 

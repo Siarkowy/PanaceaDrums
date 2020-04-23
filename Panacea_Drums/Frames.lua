@@ -361,8 +361,8 @@ function Panacea_Drums:ResetFrame(Drum)
 	Drum.anchor:Hide()
 	Drum.mainframe:Hide()
 
-	Drum.mainframe:SetAttribute("type", "item")
-	Drum.mainframe:SetAttribute("item", "item:"..self:GetDrumWatched())
+	Drum.mainframe:SetAttribute("type", "macro")
+	Drum.mainframe:SetAttribute("macrotext", ("/use %s"):format(GetItemInfo(self:GetDrumWatched())))
 
 	Drum:SetIcon(Panacea_Drums:GetDrumByItemID(self:GetDrumWatched()).texture)
 
