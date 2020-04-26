@@ -2,8 +2,8 @@
 
 ## Title: Panacea Drums
 ## Notes: Raid Drum Timers
-## Author: ccKep. Modified by Tsunadee
-## Version: 2.1
+## Author: ccKep. Modified by Tsunadee & Siarkowy
+## Version: 2.2
 ## X-Category: Raid, Leatherworking
 
 ## OptionalDeps: LibRock-1.0, SharedMedia, ButtonFacade, OmniCC

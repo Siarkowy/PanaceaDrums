@@ -1,10 +1,10 @@
-# Panacea Drums
+# Panacea Drums 5man
 
-This addon was based on [ccDrums](https://www.wowinterface.com/downloads/info9801-ccDrums.html) by ccKep, which was then slightly modified by Tsunadee from the WoW guild Panacea.
+> Newest release available at: https://github.com/SiarkowyForks/PanaceaDrums-5man/releases
+
+This addon was based on [ccDrums](https://www.wowinterface.com/downloads/info9801-ccDrums.html) by ccKep, which was then slightly modified by Tsunadee from the WoW guild Panacea & finally by Siarkowy for compatibility with TBC 5 Man private server.
 
 Requires World of Warcraft - The Burning Crusade! (TBC 2.4.3)
-
-**Download: [PanaceaDrums-master.zip](https://github.com/VideoPlayerCode/PanaceaDrums/archive/master.zip)** (Put the inner "Panacea_Drums" folder into your WoW's "Interface/AddOns" folder.)
 
 ## What this addon can do:
 
