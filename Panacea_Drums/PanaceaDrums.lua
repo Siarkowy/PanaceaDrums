@@ -120,6 +120,7 @@ function Panacea_Drums:OnInitialize()
 end
 
 function Panacea_Drums:OnEnable()
+	self:AddEventListener(self.name, "UnknownDrum")
 	Panacea_Drums:SwitchLayout(Panacea_Drums.db.profile.layout)
 
 	self:AddEventListener("Blizzard", "COMBAT_LOG_EVENT_UNFILTERED")
@@ -137,6 +138,10 @@ function Panacea_Drums:OnEnable()
 	
 	--local eventframe;
 	--self:SetScript("OnEvent", self:CHAT_MSG_PARTY(namespace, event, msg, author, ...))
+end
+
+function Panacea_Drums:UnknownDrum(namespace, event, itemId)
+	self:Print("|cffffa500[WARNING]|r Custom drums support not available.\r Click the |cffff0000|Hitem:%s:0:0:0:0:0:0:0|h[Unknown Drum]|h|r link to populate item cache.\r Please reload your interface or relog afterwards.", itemId)
 end
 
 -- function Panacea_Drums:CHAT_MSG_WHISPER(namespace, event, ...)

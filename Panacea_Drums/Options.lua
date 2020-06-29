@@ -79,8 +79,15 @@ Panacea_Drums.options = {
 						Panacea_Drums.db.profile.drumwatched = v.item
 						
 						for kf,vf in pairs(Panacea_Drums.frames) do
+							local drumId = v.item
+							local drumName = GetItemInfo(drumId)
+							if not drumName then -- should never happen, only cached drums shown in GUI dropdown, can only access through GUI
+								Panacea_Drums:DispatchEvent("UnknownDrum", drumId)
+								drumName = ("item:%d"):format(drumId)
+							end
+						
 							vf.mainframe:SetAttribute("type", "macro")
-							vf.mainframe:SetAttribute("macrotext", ("/use %s"):format(GetItemInfo(v.item)))
+							vf.mainframe:SetAttribute("macrotext", ("/use %s"):format(drumName))
 							vf:SetIcon(v.texture)
 						end
 

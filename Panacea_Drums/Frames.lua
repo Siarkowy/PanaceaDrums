@@ -361,8 +361,15 @@ function Panacea_Drums:ResetFrame(Drum)
 	Drum.anchor:Hide()
 	Drum.mainframe:Hide()
 
+	local drumId = self:GetDrumWatched()
+	local drumName = GetItemInfo(drumId)
+	if not drumName then
+		self:DispatchEvent("UnknownDrum", drumId)
+		drumName = ("item:%d"):format(drumId)
+	end
+
 	Drum.mainframe:SetAttribute("type", "macro")
-	Drum.mainframe:SetAttribute("macrotext", ("/use %s"):format(GetItemInfo(self:GetDrumWatched())))
+	Drum.mainframe:SetAttribute("macrotext", ("/use %s"):format(drumName))
 
 	Drum:SetIcon(Panacea_Drums:GetDrumByItemID(self:GetDrumWatched()).texture)
 
